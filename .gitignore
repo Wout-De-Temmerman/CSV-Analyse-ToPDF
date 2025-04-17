@@ -1,0 +1,2 @@
+# Output folder should not be pushed, can be deleted after download of PDF.
+output/
