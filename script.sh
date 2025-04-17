@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if the current directory is CSV-Analyse
-if [ "$(basename "$PWD")" != "CSV-Analyse" ]; then
+if [ "$(basename "$PWD")" != "CSV-Analyse-ToPDF" ]; then
     echo "Error: This script must be run from the CSV-Analyse directory."
     exit 1
 fi
