@@ -4,6 +4,8 @@ This project generates a formatted PDF report from Nmap scan output, including a
 
 ## Prerequisites
 
+A Debian-based Linux distribution.
+
 All required components (Nmap, Python 3, and Python libraries like `fpdf` and `matplotlib`) are automatically installed by `script.sh` when executed. The script **must be run from within the** `CSV-Analyse` **project directory** to ensure proper file paths and access to included resources like `DejaVuSans.ttf` and `logo.png`.
 
 ## Files in the Folder
