@@ -6,7 +6,7 @@ This project generates a formatted PDF report from Nmap scan output, including a
 
 A Debian-based Linux distribution.
 
-All required components (Nmap, Python 3, and Python libraries like `fpdf` and `matplotlib`) are automatically installed by `script.sh` when executed. The script **must be run from within the** `CSV-Analyse` **project directory** to ensure proper file paths and access to included resources like `DejaVuSans.ttf` and `logo.png`.
+All required components (Nmap, Python 3, and Python libraries like `fpdf` and `matplotlib`) are automatically installed by `script.sh` when executed. The script **must be run from within the** `CSV-Analyse-ToPDF` **project directory** to ensure proper file paths and access to included resources like `DejaVuSans.ttf` and `logo.png`.
 
 ## Files in the Folder
 
@@ -18,19 +18,19 @@ All required components (Nmap, Python 3, and Python libraries like `fpdf` and `m
 
 ## Usage Instructions
 
-1. **Navigate to the** `CSV-Analyse` **Directory**:
+1. **Navigate to the** `CSV-Analyse-ToPDF` **Directory**:
 
-   - Ensure you are in the `CSV-Analyse` directory containing `script.sh`, `nmap_to_pdf.py`, `DejaVuSans.ttf`, and `logo.png`. For example:
+   - Ensure you are in the `CSV-Analyse-ToPDF` directory containing `script.sh`, `nmap_to_pdf.py`, `DejaVuSans.ttf`, and `logo.png`. For example:
 
      ```bash
-     cd /path/to/CSV-Analyse
+     cd /path/to/CSV-Analyse-ToPDF
      ```
 
 2. **Run the Script**:
 
    - Execute `script.sh` with the target IP addresses or network range (in Nmap format) as an argument. The script will:
 
-     - Check that it’s running in the `CSV-Analyse` directory.
+     - Check that it’s running in the `CSV-Analyse-ToPDF` directory.
      - Verify the presence of `nmap_to_pdf.py` and `DejaVuSans.ttf`.
      - Prompt for a company name (32 characters or less).
      - Install dependencies (Nmap, Python 3, `fpdf`, `matplotlib`, etc.), using a virtual environment if `python3-fpdf` is unavailable via `apt`.
@@ -52,7 +52,7 @@ All required components (Nmap, Python 3, and Python libraries like `fpdf` and `m
 
 ## Important Notes
 
-- **Run from** `CSV-Analyse` **Directory**: The script enforces execution from the `CSV-Analyse` directory to ensure access to `DejaVuSans.ttf`, `logo.png`, and `nmap_to_pdf.py`.
+- **Run from** `CSV-Analyse-ToPDF` **Directory**: The script enforces execution from the `CSV-Analyse-ToPDF` directory to ensure access to `DejaVuSans.ttf`, `logo.png`, and `nmap_to_pdf.py`.
 - **Automatic Dependency Installation**: `script.sh` installs all required dependencies, including Nmap, Python 3, and Python libraries. Internet access and `sudo` permissions are required.
 - **Company Name Length**: The company name must be 32 characters or less, as enforced by `script.sh`.
 - **Output Directory**: All output files are moved to the `output/` directory, which is created by the script.
@@ -74,12 +74,6 @@ All required components (Nmap, Python 3, and Python libraries like `fpdf` and `m
 
 - **Script Fails with Directory Error**:
 
-  - Ensure you are in the `CSV-Analyse` directory:
-
-    ```bash
-    cd /path/to/CSV-Analyse
-    ```
-
   - Verify that `nmap_to_pdf.py` and `DejaVuSans.ttf` are present.
 
 - **Permission Issues**:
@@ -100,7 +94,7 @@ All required components (Nmap, Python 3, and Python libraries like `fpdf` and `m
 - **PDF Generation Fails**:
 
   - Verify that `nmap_output.txt` was created in the `output/` directory and contains valid Nmap output.
-  - Ensure `DejaVuSans.ttf` and `logo.png` are in the `CSV-Analyse` directory.
+  - Ensure `DejaVuSans.ttf` and `logo.png` are in the `CSV-Analyse-ToPDF` directory.
 
 - **Output Files Missing**:
 
