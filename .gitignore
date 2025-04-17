@@ -1,2 +1,5 @@
 # Output folder should not be pushed, can be deleted after download of PDF.
 output/
+
+# Custom image should not be pushed.
+logo.png
