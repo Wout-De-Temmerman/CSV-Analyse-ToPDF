@@ -91,6 +91,7 @@ else
     # Install Python dependencies in virtual environment
     echo "Installing Python dependencies (fpdf, matplotlib)..."
     pip3 install fpdf matplotlib &> /dev/null &
+    pip install --upgrade fpdf2
     PIP_INSTALL_PID=$!
     show_spinner "$PIP_INSTALL_PID" "Installing Python dependencies"
     wait "$PIP_INSTALL_PID" || { echo "Failed to install Python packages in virtual environment."; exit 1; }
